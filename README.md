@@ -1,3 +1,3 @@
 # fecore-69
 
-[Посилання на макет](<https://www.figma.com/file/gTrdKERu067LHmnhwvBqyl/Barbershop-(EN)?node-id=0%3A1>)
+[Посилання на макет](<https://www.figma.com/file/6sTLu9Mzsolfy9s1z4Y5Nr/Business-promotion-(practice)?node-id=0%3A1>)
