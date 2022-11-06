@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=+, initial-scale=1.0" />
+    <meta name="viewport" content="width=initial-width, initial-scale=1.0" />
     <title>Product</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header section -->
@@ -44,7 +48,7 @@
     </header>
     <main>
       <!-- hero section -->
-      <section>
+      <section class="hero">
         <h1>Work at the speed of thought</h1>
         <p>
           Tools, tutorials, design and innovation experts, all in one place! The most intuitive way
@@ -60,7 +64,7 @@
         <img src="./images/hero/hero-img.png" alt="hero-image" width="610" height="555" />
       </section>
       <!-- features section -->
-      <section>
+      <section class="features">
         <h2>Product was Built Specifically for You</h2>
         <ul>
           <li>
@@ -86,6 +90,77 @@
         </ul>
         <button type="button">SIGN UP NOW</button>
       </section>
+      <!-- News feed -->
+      <section class="news-feed">
+        <div class="container">
+          <h2 class="news-feed__title">Contents Strategies</h2>
+          <p class="news-feed__desc">
+            We focus on ergonomics and meeting you where you work. It's only a keystroke away.
+          </p>
+          <div class="swiper">
+            <div class="news-feed__list swiper-wrapper">
+              <article class="news-feed__card card swiper-slide">
+                <img class="card__img" src="./images/news-feed/img-1.png" alt="" width="350" />
+                <div class="card__wrapper">
+                  <p class="card__meta">
+                    By <span class="card__author">Wahid Ari</span>
+                    <time datetime="2019-03-03">03 March 2019</time>
+                  </p>
+                  <h3 class="card__title">Increasing Prosperity With Positive Thinking</h3>
+                </div>
+              </article>
+              <article class="news-feed__card card swiper-slide">
+                <img class="card__img" src="./images/news-feed/img-2.png" alt="" width="350" />
+                <div class="card__wrapper">
+                  <p class="card__meta">
+                    By <span class="card__author">Wahid Ari</span>
+                    <time datetime="2019-03-03">03 March 2019</time>
+                  </p>
+                  <h3 class="card__title">Increasing Prosperity With Positive Thinking</h3>
+                </div>
+              </article>
+              <article class="news-feed__card card swiper-slide">
+                <img class="card__img" src="./images/news-feed/img-3.png" alt="" width="350" />
+                <div class="card__wrapper">
+                  <p class="card__meta">
+                    By <span class="card__author">Wahid Ari</span>
+                    <time datetime="2019-03-03">03 March 2019</time>
+                  </p>
+                  <h3 class="card__title">Increasing Prosperity With Positive Thinking</h3>
+                </div>
+              </article>
+              <article class="news-feed__card card swiper-slide">
+                <img class="card__img" src="./images/news-feed/img-1.png" alt="" width="350" />
+                <div class="card__wrapper">
+                  <p class="card__meta">
+                    By <span class="card__author">Wahid Ari</span>
+                    <time datetime="2019-03-03">03 March 2019</time>
+                  </p>
+                  <h3 class="card__title">Increasing Prosperity With Positive Thinking</h3>
+                </div>
+              </article>
+              <article class="news-feed__card card swiper-slide">
+                <img class="card__img" src="./images/news-feed/img-2.png" alt="" width="350" />
+                <div class="card__wrapper">
+                  <p class="card__meta">
+                    By <span class="card__author">Wahid Ari</span>
+                    <time datetime="2019-03-03">03 March 2019</time>
+                  </p>
+                  <h3 class="card__title">Increasing Prosperity With Positive Thinking</h3>
+                </div>
+              </article>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/slider.js"></script>
   </body>
 </html>

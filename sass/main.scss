@@ -4,3 +4,8 @@
 // base styles
 @import './base/base';
 @import './base/container';
+
+// components
+@import './components/header';
+@import './components/slider/news-feed';
+@import './components/slider/swiper-custom';

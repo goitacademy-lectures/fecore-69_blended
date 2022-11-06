@@ -1,0 +1,26 @@
+/**
+  |============================
+  | Swiper custom styles
+  |============================
+*/
+
+.swiper {
+  --swiper-pagination-bullet-width: 16px;
+  --swiper-pagination-bullet-height: var(--swiper-pagination-bullet-width);
+  --swiper-pagination-bullet-horizontal-gap: 5px;
+  --swiper-pagination-color: #02897a;
+
+  --swiper-pagination-bullet-inactive-color: #efefef;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+}
+
+.swiper-pagination {
+  position: static;
+  margin-top: 45px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-theme-color: #02897a;
+  top: 45%;
+}
