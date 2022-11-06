@@ -8,25 +8,39 @@
   </head>
   <body>
     <!-- header section -->
-    <header>
-      <nav>
-        <a href="./index.html"
-          ><img src="./images/header/logo.png" alt="logo" width="40" height="36" />Product</a
-        >
-        <ul>
-          <li><a href="">Product</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Customers</a></li>
-          <li><a href="">Resources</a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="./index.html"
+            ><img
+              class="logo__image"
+              src="./images/header/logo.png"
+              alt="logo"
+              width="40"
+              height="36"
+            />Product</a
+          >
+          <ul class="nav__menu">
+            <li class="nav__item"><a class="nav__link" href="">Product</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Pricing</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Customers</a></li>
+            <li class="nav__item"><a class="nav__link" href="">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="header__list">
+          <li class="header__item"><button class="btn" type="button">Sign In</button></li>
+          <li class="header__item"><button class="btn" type="button">Sign Up</button></li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
-      <button type="button" aria-label="switch button">
-        <img src="./images/header/drk-mode-btn.png" alt="darkmode" width="32" height="32" />
-      </button>
+        <button class="switch-btn" type="button" aria-label="switch button">
+          <img
+            class="switch-btn__icon"
+            src="./images/header/drk-mode-btn.png"
+            alt="darkmode"
+            width="32"
+            height="32"
+          />
+        </button>
+      </div>
     </header>
     <main>
       <!-- hero section -->
