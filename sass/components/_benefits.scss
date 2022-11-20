@@ -1,0 +1,47 @@
+.benefits__menu {
+  @include card-set;
+}
+
+.benefits__item {
+  @include card-set-item;
+
+  @include mq(tablet) {
+    @include card-set-item(2);
+  }
+
+  @include mq(desktop) {
+    @include card-set-item(4);
+  }
+}
+
+.benefits__wrapper {
+  @extend %f-center;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+  background-color: #f5f4f4;
+}
+
+.benefits__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.benefits__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--third-text-color);
+}

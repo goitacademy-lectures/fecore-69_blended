@@ -1,5 +1,131 @@
-.header,
-.hero,
-.features {
+.header {
+  border-bottom: 1px solid #ececec;
+
+  @include mq(mobile-only) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--dark-text-color);
+}
+
+.header__colortext {
+  color: var(--accent-text-color);
+}
+
+.header__nav {
   display: none;
+
+  @include mq(tablet) {
+    display: block;
+    margin-left: 93px;
+  }
+}
+
+.header__menu {
+  display: flex;
+  gap: 50px;
+}
+
+.header__menu-item {
+  position: relative;
+}
+
+.header__menu-link {
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.header__menu-link:hover,
+.header__menu-link:focus {
+  color: var(--accent-text-color);
+}
+
+.header__menu-link--current::after {
+  content: '';
+
+  width: 100%;
+  height: 4px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  background-color: var(--accent-text-color);
+  border-radius: 2px;
+}
+
+.header__menu-link--current {
+  color: var(--accent-text-color);
+}
+
+.header__contacts {
+  display: none;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-left: auto;
+  }
+
+  @include mq(desktop) {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
+
+.header__contacts-link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+
+  transition-property: color;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+
+  @include mq(desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.header__contacts-link:hover,
+.header__contacts-link:focus {
+  color: var(--accent-text-color);
+}
+
+.header__contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }

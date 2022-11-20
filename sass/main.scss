@@ -1,11 +1,21 @@
 // utils
-@import './utils/modern-normalize';
+@import './utils/vars';
+@import './utils/mixin';
+@import './utils/placeholders';
 
-// base styles
-@import './base/base';
-@import './base/container';
+// base
+@import './base/body';
+@import './base/reset';
+@import './base/basestyles';
 
 // components
 @import './components/header';
-@import './components/slider/news-feed';
-@import './components/slider/swiper-custom';
+@import './components/menu';
+@import './components/hero';
+@import './components/modal';
+@import './components/benefits';
+@import './components/activity';
+@import './components/team';
+@import './components/clients';
+@import './components/portfolio';
+@import './components/footer';
